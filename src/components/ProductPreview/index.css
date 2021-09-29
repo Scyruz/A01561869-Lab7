@@ -37,3 +37,21 @@
     background-color: #ff7b00f7 !important;
     color: #ffffff !important;
   }
+
+  /* unvisited link */
+  a:link {
+    color: black !important;
+    text-decoration: none !important; 
+  }
+
+  /* visited link */
+  a:visited {
+    color: black !important;
+    text-decoration: none !important; 
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: #ff7b00f7 !important;
+    text-decoration: none !important; 
+  }

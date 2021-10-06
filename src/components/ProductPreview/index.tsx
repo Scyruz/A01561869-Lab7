@@ -46,7 +46,7 @@ const ProductPreview: React.FC<ProductPreviewProps> = (props) => {
             <Grid container className="productGrid" spacing={2}>
                 <Grid item lg={2}>
                     <Paper className="largeImage">
-                        <Link to={`/pdp?productId=${props.product.id}`}>
+                        <Link className="product-link" to={`/pdp?productId=${props.product.id}`}>
                             <img src={mediumImageUrl} alt={props.product.name} />
                         </Link>
                     </Paper>
@@ -54,12 +54,12 @@ const ProductPreview: React.FC<ProductPreviewProps> = (props) => {
                 <Grid item lg={10} container>
                     <Grid item lg={12}>
                         <Typography className="productName" variant="h1">
-                            <Link to={`/pdp?productId=${props.product.id}`}>{props.product.name}</Link>
+                            <Link className="product-link" to={`/pdp?productId=${props.product.id}`}>{props.product.name}</Link>
                         </Typography>
                     </Grid>
                     <Grid item lg={12}>
                         <Typography className="description">
-                            <Link to={`/pdp?productId=${props.product.id}`}>{props.product.description}</Link>
+                            <Link className="product-link" to={`/pdp?productId=${props.product.id}`}>{props.product.description}</Link>
                         </Typography>
                     </Grid>
                     <Grid item lg={2}>

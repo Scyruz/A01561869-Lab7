@@ -9,9 +9,9 @@ function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Header/>
       <BrowserRouter>
-          <Routes />
+        <Header/>
+        <Routes />
       </BrowserRouter>
     </React.Fragment>
   );
